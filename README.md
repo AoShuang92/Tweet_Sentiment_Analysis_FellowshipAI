@@ -13,7 +13,7 @@ Here is the data preprocessing flow chart:<br>
 
 
 ## Proposed Method 
-The model is bi-directional LSTM followed by two fully connected (FC) layers. I also integrate squeeze and excitation module [6] before each FC layer. <br>
+The model is bi-directional LSTM followed by two fully connected (FC) layers. I also integrate squeeze and excitation module [6] before each FC layer, which allows the network to perform feature recalibration,through which it can learn to use global information to se-lectively emphasise informative features and suppress lessuseful ones. <br>
 
 ## LSFLoss
 Here I have proposed a new loss function LSFLoss (Label Smoothing Focal Loss) inspired by focal loss [4] and label smoothing [5]. As the dataset contains class imbalance problem, focal loss can tackle this problem. Label smoothing can improve the accuracy as well as model calibration.

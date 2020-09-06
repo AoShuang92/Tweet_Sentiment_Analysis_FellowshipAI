@@ -18,6 +18,14 @@ The model is bi-directional LSTM followed by two fully connected (FC) layers. I 
 ## LSFLoss
 Here I have proposed a new loss function LSFLoss (Label Smoothing Focal Loss) inspired by focal loss [4] and label smoothing [5]. As the dataset contains class imbalance problem, focal loss can tackle this problem. Label smoothing can improve the accuracy as well as model calibration.
 
+## Result
+Basic LSTM: Best_acc:78.9062, Best_F1:0.6321 <br>
+LSTM_ATTN: Best_acc:75.3906, Best_F1:0.7737<br>
+RNN: Best_acc:78.2670, Best_F1:0.7117<br>
+RCNN: Best_acc:78.7585, Best_F1:0.7083<br>
+RNN_ATTENTION: Best_acc:78.6932, Best_F1:0.7152<br>
+Proposed Architecture:Best_acc:79.0838, Best_F1:0.7716<br>
+
 ## Conclusion 
 I use bi-directional LSTM with squeeze and excitation to predict sentiment of positive, negative and neutral from Twitter US Airline Sentiment dataset. I have proposed a new loss function inspired by focal loss [4] and label smoothing [5] to deal with class imbalance issue. The proposed model outperforms the recent sequential models like LSTM, RNN and RCNN. ULMFiT technique is also integrated with the proposed model, which does not increase the accuracy. Further experiment will focus on Language Modeling with Self Supervised Learning (SSL) scheme. 
 

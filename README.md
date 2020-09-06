@@ -13,7 +13,7 @@ Here is the data preprocessing flow chart:<br>
 
 
 ## Proposed Method 
-The model is bi-directional LSTM followed by two fully connected (FC) layers. I also integrate squeeze and excitation module before each FC layer. <br>
+The model is bi-directional LSTM followed by two fully connected (FC) layers. I also integrate squeeze and excitation module [6] before each FC layer. <br>
 
 ## LSFLoss
 Here I have proposed a new loss function LSFLoss (Label Smoothing Focal Loss) inspired by focal loss [4] and label smoothing [5]. As the dataset contains class imbalance problem, focal loss can tackle this problem. Label smoothing can improve the accuracy as well as model calibration.
@@ -35,3 +35,4 @@ I use bi-directional LSTM with squeeze and excitation to predict sentiment of po
 [3]Shervin Minaee, Elham Azimi, and AmirAli Abdolrashidi. Deep-sentiment: Sentiment analysis using ensemble ofcnn and bi-lstm models.arXiv preprint arXiv:1904.04206, 2019.<br>
 [4]Tsung-Yi Lin, Priya Goyal, Ross Girshick, Kaiming He, and Piotr Dollár. Focal loss for dense object detection. InProceedings of the IEEE international conference on computer vision, pages 2980–2988, 2017.<br>
 [5]Rafael Müller, Simon Kornblith, and Geoffrey E Hinton. When does label smoothing help?  InAdvances in NeuralInformation Processing Systems, pages 4694–4703, 2019.
+[6]Hu, J., Shen, L., & Sun, G. (2018). Squeeze-and-excitation networks. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 7132-7141).
